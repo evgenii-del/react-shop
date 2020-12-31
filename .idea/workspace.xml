@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-top.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/empty-cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/grey-arrow-left.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/pizza-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/trash.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_all.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_categories.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_pizza-block.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_sort.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Extrabld.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Extrabld.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Extrabld.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Semibold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/fonts/ProximaNova-Semibold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/libs/_normalize.scss" afterDir="false" />
+    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sort.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_sort.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_sort.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +46,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -96,8 +72,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609346897805</updated>
-      <workItem from="1609346899019" duration="10439000" />
+      <workItem from="1609346899019" duration="10673000" />
+      <workItem from="1609397829559" duration="6868000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
+      <created>1609366524027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609366524027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,8 +98,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category." />
   </component>
 </project>
