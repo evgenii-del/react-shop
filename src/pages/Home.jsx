@@ -1,6 +1,8 @@
-import {Category, Sort} from "../components";
+import {Category, PizzaBlock, Sort} from "../components";
 
-const Home = () => {
+const Home = (props) => {
+    const {pizzas} = props;
+
     return (
         <div className="container">
             <div className="content__top">
@@ -9,6 +11,11 @@ const Home = () => {
                 <Sort types={["популярности", "цене", "алфавиту"]}/>
             </div>
             <h2 className="content__title">Все пиццы</h2>
+            <div className="content__items">
+                {
+                    pizzas.map(pizza => <PizzaBlock key={pizza.id} pizza={pizza}/>)
+                }
+            </div>
         </div>
     );
 }
