@@ -1,12 +1,13 @@
 import {useState, useEffect, useRef} from "react";
+import {memo} from "react";
 
-const Sort = (props) => {
+const Sort = memo(props => {
     const {types} = props;
     const [visiblePopup, setVisiblePopup] = useState(false);
     const [selectedType, setSelectedType] = useState(0);
     const sortRef = useRef();
 
-    const selectedTypeLabel = types[selectedType];
+    const selectedTypeLabel = types[selectedType].name;
 
     const toggleVisiblePopup = () => {
         setVisiblePopup(!visiblePopup);
@@ -50,15 +51,15 @@ const Sort = (props) => {
                 <div className="sort__popup">
                     <ul>
                         {
-                            types.map((type, index) => <li onClick={() => onSelectType(index)}
-                                                           className={selectedType === index ? "active" : undefined}
-                                                           key={`${type}_${index}`}>{type}</li>)
+                            types.map((obj, index) => <li onClick={() => onSelectType(index)}
+                                                          className={selectedType === index ? "active" : undefined}
+                                                          key={`${obj.type}_${index}`}>{obj.name}</li>)
                         }
                     </ul>
                 </div>
             )}
         </div>
     )
-}
+})
 
 export default Sort;

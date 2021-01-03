@@ -1,6 +1,6 @@
-import {useState} from "react";
+import {useState, memo} from "react";
 
-const Category = (props) => {
+const Category = memo(props => {
     const {categories} = props;
     const [selectedCategory, setSelectedCategory] = useState(0);
 
@@ -19,6 +19,6 @@ const Category = (props) => {
             </ul>
         </div>
     )
-}
+})
 
 export default Category;
