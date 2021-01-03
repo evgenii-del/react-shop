@@ -1,5 +1,4 @@
-import {useState, useEffect, useRef} from "react";
-import {memo} from "react";
+import {useState, useEffect, useRef, memo} from "react";
 
 const Sort = memo(props => {
     const {types} = props;

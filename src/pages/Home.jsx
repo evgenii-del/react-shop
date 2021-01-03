@@ -1,8 +1,9 @@
 import {useDispatch, useSelector} from "react-redux";
-import {useCallback} from "react";
+import {useCallback, useEffect} from "react";
 
-import {Category, PizzaBlock, Sort} from "../components";
+import {Category, PizzaBlock, PizzaBlockLoader, Sort} from "../components";
 import {setCategory} from "../redux/actions/filters";
+import {fetchPizzas} from "../redux/actions/pizzas";
 
 const categoriesArr = ["Все", "Мясные", "Вегетарианская", "Гриль", "Острые", "Закрытые"];
 const typesArr =
@@ -11,10 +12,15 @@ const typesArr =
 const Home = () => {
     const dispatch = useDispatch();
     const pizzas = useSelector(({pizzas}) => pizzas.pizzas);
+    const isLoaded = useSelector(({pizzas}) => pizzas.isLoaded);
+
+    useEffect(() => {
+        dispatch(fetchPizzas());
+    }, [dispatch])
 
     const onSelectCategory = useCallback(index => {
         dispatch(setCategory(index))
-    }, [])
+    }, [dispatch])
 
     return (
         <div className="container">
@@ -26,7 +32,8 @@ const Home = () => {
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
                 {
-                    pizzas && pizzas.map(pizza => <PizzaBlock key={pizza.id} pizza={pizza}/>)
+                    isLoaded ? pizzas.map(pizza => <PizzaBlock key={pizza.id}
+                                                               pizza={pizza}/>) : Array(12).fill(<PizzaBlockLoader/>)
                 }
             </div>
         </div>

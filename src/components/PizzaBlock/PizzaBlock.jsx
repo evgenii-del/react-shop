@@ -34,7 +34,7 @@ const PizzaBlock = (props) => {
                                 className={classNames({
                                     "active": selectedType === index,
                                     "disabled": !types.includes(index)
-                                })}>{type}</li>)
+                                })} key={index}>{type}</li>)
                     }
                 </ul>
                 <ul>
@@ -44,7 +44,7 @@ const PizzaBlock = (props) => {
                                 className={classNames({
                                     "active": selectedSize === size,
                                     "disabled": !sizes.includes(size)
-                                })}>{size} см.</li>)
+                                })} key={size}>{size} см.</li>)
                     }
                 </ul>
             </div>
