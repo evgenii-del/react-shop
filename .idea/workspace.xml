@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Included react-redux, json-server. Changes App, Home, Sort and Category components.">
-      <change afterPath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlockLoader.jsx" afterDir="false" />
+    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Included react-content-loader. Added loader component for PizzaBlock">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sort.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/pizzas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/pizzas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/filters.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/pizzas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/pizzas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +69,8 @@
       <workItem from="1609437538751" duration="7819000" />
       <workItem from="1609675358321" duration="5839000" />
       <workItem from="1609696037719" duration="5005000" />
-      <workItem from="1609704610958" duration="2518000" />
+      <workItem from="1609704610958" duration="2744000" />
+      <workItem from="1609757704699" duration="7499000" />
     </task>
     <task id="LOCAL-00001" summary="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
       <created>1609366524027</created>
@@ -105,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609699010999</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Included react-content-loader. Added loader component for PizzaBlock">
+      <created>1609707977269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609707977269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +131,7 @@
     <MESSAGE value="Included react-router-dom. Created Home and Cart pages." />
     <MESSAGE value="Included axios and prop-types. Created PizzaBlock component" />
     <MESSAGE value="Included react-redux, json-server. Changes App, Home, Sort and Category components." />
-    <option name="LAST_COMMIT_MESSAGE" value="Included react-redux, json-server. Changes App, Home, Sort and Category components." />
+    <MESSAGE value="Included react-content-loader. Added loader component for PizzaBlock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Included react-content-loader. Added loader component for PizzaBlock" />
   </component>
 </project>

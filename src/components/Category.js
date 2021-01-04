@@ -1,19 +1,14 @@
-import {useState, memo} from "react";
+import {memo} from "react";
 
 const Category = memo(props => {
-    const {categories} = props;
-    const [selectedCategory, setSelectedCategory] = useState(0);
-
-    const onSelectCategory = (index) => {
-        setSelectedCategory(index);
-    }
+    const {categories, activeCategory, selectCategory} = props;
 
     return (
         <div className="categories">
             <ul>
                 {
-                    categories.map((category, index) => <li onClick={() => onSelectCategory(index)}
-                                                            className={selectedCategory === index ? "active" : undefined}
+                    categories.map((category, index) => <li onClick={() => selectCategory(index)}
+                                                            className={activeCategory === index ? "active" : undefined}
                                                             key={`${category}_${index}`}>{category}</li>)
                 }
             </ul>
