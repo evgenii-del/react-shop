@@ -47,7 +47,7 @@ const Home = () => {
             <div className="content__items">
                 {
                     isLoaded ? pizzas.map(pizza => <PizzaBlock key={pizza.id} {...pizza}
-                                                               countOfAddedPizza={cartPizzas[pizza.id] && cartPizzas[pizza.id].length}
+                                                               countOfAddedPizza={cartPizzas[pizza.id] && cartPizzas[pizza.id].items.length}
                                                                addPizzaToCart={(obj) => onAddPizzaToCart(obj)}/>) :
                         Array(12).fill(0).map((_, index) => <PizzaBlockLoader key={index}/>)
                 }
