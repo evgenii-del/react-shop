@@ -1,8 +1,10 @@
-const Button = () => {
+const Button = (props) => {
+    const {totalPrice, totalCount} = props;
+
     return (
         <div className="header__cart">
             <a href="#asd" className="button button--cart">
-                <span>520 ₽</span>
+                <span>{totalPrice} ₽</span>
                 <div className="button__delimiter"/>
                 <svg
                     width="18"
@@ -33,7 +35,7 @@ const Button = () => {
                         strokeLinejoin="round"
                     />
                 </svg>
-                <span>3</span>
+                <span>{totalCount}</span>
             </a>
         </div>
     )

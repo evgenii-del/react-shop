@@ -1,21 +1,32 @@
 import {useState} from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 
 const PizzaBlock = (props) => {
-    const {imageUrl, name, types, sizes, price} = props.pizza;
+    const {id, imageUrl, name, types, sizes, price, addPizzaToCart, countOfAddedPizza} = props;
     const [selectedType, setSelectedType] = useState(types[0]);
     const [selectedSize, setSelectedSize] = useState(sizes[0]);
 
     const typesArr = ["тонкое", "традиционное"];
     const sizesArr = [26, 30, 40];
 
-    const handleSelectType = (index) => {
+    const handleSelectType = index => {
         setSelectedType(index);
     }
 
-    const handleSelectSize = (index) => {
+    const handleSelectSize = index => {
         setSelectedSize(index);
+    }
+
+    const handleAddPizzaToCart = () => {
+        const pizzaObj = {
+            id,
+            name,
+            imageUrl,
+            price,
+            size: selectedSize,
+            type: typesArr[selectedType]
+        }
+        addPizzaToCart(pizzaObj);
     }
 
     return (
@@ -50,7 +61,8 @@ const PizzaBlock = (props) => {
             </div>
             <div className="pizza-block__bottom">
                 <div className="pizza-block__price">от {price} ₽</div>
-                <div className="button button--outline button--add">
+                <a className="button button--outline button--add"
+                   onClick={handleAddPizzaToCart}>
                     <svg
                         width="12"
                         height="12"
@@ -64,15 +76,11 @@ const PizzaBlock = (props) => {
                         />
                     </svg>
                     <span>Добавить</span>
-                    <i>2</i>
-                </div>
+                    {countOfAddedPizza && <i>{countOfAddedPizza}</i>}
+                </a>
             </div>
         </div>
     );
-}
-
-PizzaBlock.propTypes = {
-    pizza: PropTypes.object.isRequired
 }
 
 export default PizzaBlock;
