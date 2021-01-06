@@ -43,6 +43,27 @@ const carts = (state = initialState, action) => {
                 totalPrice: totalPrice
             }
         }
+        case "CLEAR_CART":
+            return {
+                pizzas: {},
+                totalCount: 0,
+                totalPrice: 0
+            }
+        case "REMOVE_PIZZA":
+            const newPizzas = {
+                ...state.pizzas
+            };
+
+            const currentTotalPrice = newPizzas[action.payload].totalPrice;
+            const currentTotalCount = newPizzas[action.payload].items.length;
+            delete newPizzas[action.payload];
+
+            return {
+                ...state,
+                pizzas: newPizzas,
+                totalPrice: state.totalPrice - currentTotalPrice,
+                totalCount: state.totalCount - currentTotalCount
+            };
         default:
             return state;
     }

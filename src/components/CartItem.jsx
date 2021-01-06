@@ -1,5 +1,9 @@
 const CartItem = props => {
-    const {name, imageUrl, price} = props;
+    const {id, name, imageUrl, price, totalPrice, totalCount, onRemovePizzaFromCart} = props;
+
+    const handleRemovePizzaFromCart = () => {
+        onRemovePizzaFromCart(id);
+    }
 
     return (
         <div className="cart__item">
@@ -26,7 +30,7 @@ const CartItem = props => {
                             fill="#EB5A1E"/>
                     </svg>
                 </div>
-                <b>2</b>
+                <b>{totalCount}</b>
                 <div className="button button--outline button--circle cart__item-count-plus">
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
@@ -40,10 +44,10 @@ const CartItem = props => {
                 </div>
             </div>
             <div className="cart__item-price">
-                <b>{price} ₽</b>
+                <b>{totalPrice} ₽</b>
             </div>
             <div className="cart__item-remove">
-                <div className="button button--outline button--circle">
+                <div className="button button--outline button--circle" onClick={handleRemovePizzaFromCart}>
                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
