@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Added the ability to clean cart and remove selected pizza from cart">
+    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Added the ability to change the number of items in the cart">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/carts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/carts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_categories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_pizza-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_pizza-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_sort.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_sort.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
       <workItem from="1609856762891" duration="59000" />
       <workItem from="1609874614601" duration="5090000" />
       <workItem from="1609955474327" duration="4598000" />
-      <workItem from="1610211321984" duration="2458000" />
+      <workItem from="1610211321984" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
       <created>1609366524027</created>
@@ -139,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609960117833</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added the ability to change the number of items in the cart">
+      <created>1610213863232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610213863232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +177,7 @@
     <MESSAGE value="Added ability add pizza to cart. Added counter of price and count of pizzas" />
     <MESSAGE value="Changed ADD_PIZZA reducer. Created CartItem component. Added proxy to package.json" />
     <MESSAGE value="Added the ability to clean cart and remove selected pizza from cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to clean cart and remove selected pizza from cart" />
+    <MESSAGE value="Added the ability to change the number of items in the cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to change the number of items in the cart" />
   </component>
 </project>

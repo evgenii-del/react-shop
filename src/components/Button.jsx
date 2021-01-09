@@ -3,7 +3,7 @@ const Button = (props) => {
 
     return (
         <div className="header__cart">
-            <a href="#asd" className="button button--cart">
+            <div className="button button--cart">
                 <span>{totalPrice} ₽</span>
                 <div className="button__delimiter"/>
                 <svg
@@ -36,7 +36,7 @@ const Button = (props) => {
                     />
                 </svg>
                 <span>{totalCount}</span>
-            </a>
+            </div>
         </div>
     )
 }

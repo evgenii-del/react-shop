@@ -61,8 +61,8 @@ const PizzaBlock = (props) => {
             </div>
             <div className="pizza-block__bottom">
                 <div className="pizza-block__price">от {price} ₽</div>
-                <a className="button button--outline button--add"
-                   onClick={handleAddPizzaToCart}>
+                <div className="button button--outline button--add"
+                     onClick={handleAddPizzaToCart}>
                     <svg
                         width="12"
                         height="12"
@@ -77,7 +77,7 @@ const PizzaBlock = (props) => {
                     </svg>
                     <span>Добавить</span>
                     {countOfAddedPizza && <i>{countOfAddedPizza}</i>}
-                </a>
+                </div>
             </div>
         </div>
     );
