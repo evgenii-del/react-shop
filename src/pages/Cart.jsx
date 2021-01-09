@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
 import {CartItem} from "../components";
-import {clearCart, removePizzaFromCart} from "../redux/actions/carts";
+import {clearCart, decreasePizzaItem, increasePizzaItem, removePizzaFromCart} from "../redux/actions/carts";
 import emptyCartPNG from "../assets/img/empty-cart.png";
 
 const Cart = () => {
@@ -23,6 +23,14 @@ const Cart = () => {
         if (window.confirm("Удалить?")) {
             dispatch(removePizzaFromCart(id));
         }
+    }
+
+    const onIncreasePizzaItem = id => {
+        dispatch(increasePizzaItem(id));
+    }
+
+    const onDecreasePizzaItem = id => {
+        dispatch(decreasePizzaItem(id));
     }
 
     return (
@@ -72,6 +80,8 @@ const Cart = () => {
                                                                       totalPrice={pizzas[cartPizza.id].totalPrice}
                                                                       totalCount={pizzas[cartPizza.id].items.length}
                                                                       onRemovePizzaFromCart={onRemovePizzaFromCart}
+                                                                      onIncreasePizzaItem={onIncreasePizzaItem}
+                                                                      onDecreasePizzaItem={onDecreasePizzaItem}
                                 />)
                             }
                         </div>

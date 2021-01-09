@@ -11,3 +11,13 @@ export const removePizzaFromCart = pizzaId => ({
 export const clearCart = () => ({
     type: "CLEAR_CART"
 })
+
+export const increasePizzaItem = id => ({
+    type: "INCREASE_PIZZA",
+    payload: id
+})
+
+export const decreasePizzaItem = id => ({
+    type: "DECREASE_PIZZA",
+    payload: id
+})

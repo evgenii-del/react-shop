@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Changed ADD_PIZZA reducer. Created CartItem component. Added proxy to package.json">
+    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Added the ability to clean cart and remove selected pizza from cart">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem.jsx" afterDir="false" />
@@ -73,7 +73,8 @@
       <workItem from="1609844696997" duration="8161000" />
       <workItem from="1609856762891" duration="59000" />
       <workItem from="1609874614601" duration="5090000" />
-      <workItem from="1609955474327" duration="4453000" />
+      <workItem from="1609955474327" duration="4598000" />
+      <workItem from="1610211321984" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
       <created>1609366524027</created>
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609879958391</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added the ability to clean cart and remove selected pizza from cart">
+      <created>1609960117833</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609960117833</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +167,7 @@
     <MESSAGE value="Added sort and filter system" />
     <MESSAGE value="Added ability add pizza to cart. Added counter of price and count of pizzas" />
     <MESSAGE value="Changed ADD_PIZZA reducer. Created CartItem component. Added proxy to package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed ADD_PIZZA reducer. Created CartItem component. Added proxy to package.json" />
+    <MESSAGE value="Added the ability to clean cart and remove selected pizza from cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to clean cart and remove selected pizza from cart" />
   </component>
 </project>
