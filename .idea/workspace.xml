@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Added the ability to change the number of items in the cart">
+    <list default="true" id="f184a774-5387-4c39-b40e-97da2a61e732" name="Default Changelist" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/donuts/donut9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/donut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/empty-card.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/empty-cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/empty-cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pizza-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PizzaBlock/PizzaBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_categories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_categories.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_pizza-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_pizza-block.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_sort.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_sort.scss" afterDir="false" />
     </list>
@@ -41,16 +59,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\react-shop\src\assets\img" />
       <recent name="C:\Users\Admin\WebstormProjects\react-shop\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\react-shop\public" />
+      <recent name="C:\Users\Admin\WebstormProjects\react-shop\src\assets\img" />
       <recent name="C:\Users\Admin\WebstormProjects\react-shop\src\components\PizzaBlock" />
       <recent name="C:\Users\Admin\WebstormProjects\react-shop\src\components" />
     </key>
@@ -76,7 +97,8 @@
       <workItem from="1609856762891" duration="59000" />
       <workItem from="1609874614601" duration="5090000" />
       <workItem from="1609955474327" duration="4598000" />
-      <workItem from="1610211321984" duration="4043000" />
+      <workItem from="1610211321984" duration="4186000" />
+      <workItem from="1610727375646" duration="8416000" />
     </task>
     <task id="LOCAL-00001" summary="Created Header, Category and Button components. Included new fonts. Installed SCSS. Added ability to select a category.">
       <created>1609366524027</created>
@@ -148,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610213863232</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring">
+      <created>1610215523017</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610215523017</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +207,7 @@
     <MESSAGE value="Changed ADD_PIZZA reducer. Created CartItem component. Added proxy to package.json" />
     <MESSAGE value="Added the ability to clean cart and remove selected pizza from cart" />
     <MESSAGE value="Added the ability to change the number of items in the cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to change the number of items in the cart" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>

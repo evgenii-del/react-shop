@@ -6,7 +6,7 @@ import {setCategory, setSortBy} from "../redux/actions/filters";
 import {fetchPizzas} from "../redux/actions/pizzas";
 import {addPizzaToCart} from "../redux/actions/carts";
 
-const categoriesArr = ["Все", "Мясные", "Вегетарианская", "Гриль", "Острые", "Закрытые"];
+const categoriesArr = ["Все", "Шоколад", "Арахис", "Малина", "Клубника", "Бананс"];
 const typesArr = [
     {name: 'популярности', type: 'rating', order: 'desc'},
     {name: "цене", type: "price", order: "desc"},
@@ -43,7 +43,7 @@ const Home = () => {
                           categories={categoriesArr}/>
                 <Sort activeSortType={sortBy.type} selectSortBy={onSelectSortBy} types={typesArr}/>
             </div>
-            <h2 className="content__title">Все пиццы</h2>
+            <h2 className="content__title">Все пончики</h2>
             <div className="content__items">
                 {
                     isLoaded ? pizzas.map(pizza => <PizzaBlock key={pizza.id} {...pizza}

@@ -5,6 +5,7 @@ import {CartItem} from "../components";
 import {clearCart, decreasePizzaItem, increasePizzaItem, removePizzaFromCart} from "../redux/actions/carts";
 import emptyCartPNG from "../assets/img/empty-cart.png";
 
+
 const Cart = () => {
     const dispatch = useDispatch();
     const {pizzas, totalCount, totalPrice} = useSelector(({carts}) => carts);
@@ -109,10 +110,10 @@ const Cart = () => {
                     </div>
                 ) : (
                     <div className="cart cart--empty">
-                        <h2>Корзина пустая <icon>😕</icon></h2>
+                        <h2>Корзина пустая</h2>
                         <p>
-                            Вероятней всего, вы не заказывали ещё пиццу.<br/>
-                            Для того, чтобы заказать пиццу, перейди на главную страницу.
+                            Вероятней всего, вы ничего не заказали.<br/>
+                            Для того, чтобы заказать пончики, перейди на главную страницу.
                         </p>
                         <img src={emptyCartPNG} alt="Empty cart"/>
                         <Link to="/" className="button button--black">

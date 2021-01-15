@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 
 import {Button} from "./../components";
-import logoSvg from "./../assets/img/pizza-logo.svg";
+import logoSvg from "./../assets/img/donut.svg";
 
 const Header = () => {
     const {totalPrice, totalCount} = useSelector(({carts}) => carts);
@@ -14,8 +14,8 @@ const Header = () => {
                     <div className="header__logo">
                         <img width="38" src={logoSvg} alt="Pizza logo"/>
                         <div>
-                            <h1>React Pizza</h1>
-                            <p>самая вкусная пицца во вселенной</p>
+                            <h1>Donut</h1>
+                            <p>самые вкусные пончики</p>
                         </div>
                     </div>
                 </Link>
