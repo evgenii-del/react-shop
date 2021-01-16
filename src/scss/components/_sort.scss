@@ -3,6 +3,7 @@
 .sort {
   position: relative;
   min-width: 245px;
+  user-select: none;
 
   &__label {
     display: flex;
@@ -48,7 +49,7 @@
 
         &.active,
         &:hover {
-          background: rgba(254, 95, 30, 0.05);
+          background: rgba($pink-light, 0.05);
         }
 
         &.active {

@@ -1,17 +1,13 @@
 import {useState} from "react";
 import classNames from "classnames";
 
-const PizzaBlock = (props) => {
-    const {id, imageUrl, name, types, sizes, price, addPizzaToCart, countOfAddedPizza} = props;
-    const [selectedType, setSelectedType] = useState(types[0]);
+
+const PizzaBlock = props => {
+    const {id, imageUrl, name, sizes, price, addPizzaToCart, countOfAddedPizza} = props;
     const [selectedSize, setSelectedSize] = useState(sizes[0]);
 
-    const typesArr = ["тонкое", "традиционное"];
-    const sizesArr = [26, 30, 40];
-
-    const handleSelectType = index => {
-        setSelectedType(index);
-    }
+    const sizesArrTitles = ["маленький", "средний", "большой"];
+    const sizesArr = [0, 1, 2];
 
     const handleSelectSize = index => {
         setSelectedSize(index);
@@ -24,7 +20,6 @@ const PizzaBlock = (props) => {
             imageUrl,
             price,
             size: selectedSize,
-            type: typesArr[selectedType]
         }
         addPizzaToCart(pizzaObj);
     }
@@ -40,27 +35,17 @@ const PizzaBlock = (props) => {
             <div className="pizza-block__selector">
                 <ul>
                     {
-                        typesArr.map((type, index) =>
-                            <li onClick={() => handleSelectType(index)}
-                                className={classNames({
-                                    "active": selectedType === index,
-                                    "disabled": !types.includes(index)
-                                })} key={index}>{type}</li>)
-                    }
-                </ul>
-                <ul>
-                    {
                         sizesArr.map((size) =>
                             <li onClick={() => handleSelectSize(size)}
                                 className={classNames({
                                     "active": selectedSize === size,
                                     "disabled": !sizes.includes(size)
-                                })} key={size}>{size} см.</li>)
+                                })} key={size}>{sizesArrTitles[size]}</li>)
                     }
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от {price} ₽</div>
+                <div className="pizza-block__price">от {price} грн.</div>
                 <div className="button button--outline button--add"
                      onClick={handleAddPizzaToCart}>
                     <span>Добавить</span>
